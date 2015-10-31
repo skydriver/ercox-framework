@@ -1,2 +1,2 @@
-# ercox-framework
+# ErCox Framework
 PHP MVC Based Framework
