@@ -75,7 +75,7 @@ abstract class Config
     /**
      * Database name
      */
-    const database_name = 'information_schema';
+    const database_name = '';
     
     /**
      * Database password
