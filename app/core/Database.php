@@ -78,7 +78,6 @@ class Database extends Config
         }
         catch ( PDOException $ex )
         {
-            var_dump( $ex->getMessage() );
             return;
         }
     } // End of function __construct();
