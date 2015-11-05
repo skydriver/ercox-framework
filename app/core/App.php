@@ -130,7 +130,8 @@ class App
         
         $this->params = $url ? array_values($url) : [];
         
-        call_user_func_array([$this->controller, $this->method], $this->params);
+        $controllerInstance = new $this->controller;
+        call_user_func_array([$controllerInstance, $this->method], $this->params);
     } // End of function make route();
     
     
