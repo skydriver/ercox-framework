@@ -1,0 +1,587 @@
+form#profile-edit {}
+
+form#profile-edit .fullblock {
+    position: relative;
+    overflow: hidden;
+    clear: both;
+    margin-top: 20px;
+}
+
+form#profile-edit .left {
+    float: left;
+}
+
+form#profile-edit .right {
+    float: right;
+}
+
+form#profile-edit .box {}
+
+form#profile-edit .left,
+form#profile-edit .right {
+    width: 50%;
+}
+
+form#profile-edit label {
+    display: inline-block;
+    width: 100px;
+}
+
+form#profile-edit input[type=text],
+form#profile-edit input[type=email],
+form#profile-edit textarea,
+form#profile-edit select {
+    display: inline-block;
+    padding: 7px 15px;
+    width: 100% !important;
+    max-width: 100%;
+    height: 40px !important;
+    line-height: 40px !important;
+}
+
+form#profile-edit input[type=text].error,
+form#profile-edit input[type=email].error,
+form#profile-edit textarea.error {
+    border-color: red !important;
+}
+
+div.left,
+div.right {
+    width: 47% !important;
+}
+
+div.left,
+div.right,
+div.fullblock,
+div.bottom-buttons {
+    padding: 20px;
+    background: white !important;
+}
+
+div.fullblock.half {
+    padding: 20px 0;
+}
+
+div.bottom-buttons {
+    margin: 20px 0;
+}
+
+div.fullblock.half {
+    background: none !important;
+}
+
+div.ajax-contact-popup.register-popup {
+    display: none !important;
+}
+
+.ms-ctn .ms-trigger {
+    border: 0px;
+}
+
+.ms-ctn .ms-trigger div.ms-trigger-ico {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+div.ms-ctn.form-control {
+    border: 1px solid silver;
+    padding: 10px;
+    background: #fff;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+
+/*
+body.users_page_edit-member .member-group-child a.update_fields,
+body.users_page_edit-member .member-group-child a.mobile-edit-button {
+    display: none !important;
+}
+*/
+
+body.users_page_edit-member a,
+body.users_page_edit-member a:focus,
+body.users_page_edit-member a:active,
+body.users_page_edit-member a:hover {
+    outline: none !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+}
+
+body.users_page_edit-member a.add_new_row,
+body.users_page_edit-member a.remove-repeater-row,
+body.users_page_edit-member a.mediator-member-avatar,
+body.users_page_edit-member a.update_fields {
+    color: #414141;
+    padding: 10px 15px;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 600;
+    border-radius: 4px;
+    position: relative;
+    display: inline-block;
+    background: #e3e3e3;
+    outline: none !important;
+}
+
+body.users_page_edit-member #profile-edit input[type="submit"],
+body.users_page_edit-member #profile-edit input[type="submit"]:focus,
+body.users_page_edit-member #profile-edit input[type="submit"]:active {
+    outline: none;
+    box-shadow: none;
+}
+
+body.users_page_edit-member #profile-edit input[type="submit"] {
+    color: #414141;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 600;
+    border-radius: 4px;
+    position: relative;
+    height: auto;
+    border: 0px;
+    cursor: pointer;
+    color: white;
+    background-color: #82a334;
+    transition: background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0s, box-shadow 0.25s ease-in-out 0s, border 0.25s ease-in-out 0s, fill 0.25s ease-in-out 0s, transform 0.15s ease-in-out 0s, height 0.25s ease-in-out 0s, line-height 0.25s ease-in-out 0s;
+    -webkit-transition: background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0s, box-shadow 0.25s ease-in-out 0s, border 0.25s ease-in-out 0s, fill 0.25s ease-in-out 0s, transform 0.15s ease-in-out 0s, height 0.25s ease-in-out 0s, line-height 0.25s ease-in-out 0s;
+    -moz-transition: background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0s, box-shadow 0.25s ease-in-out 0s, border 0.25s ease-in-out 0s, fill 0.25s ease-in-out 0s, transform 0.15s ease-in-out 0s, height 0.25s ease-in-out 0s, line-height 0.25s ease-in-out 0s;
+    -o-transition: background-color 0.25s ease-in-out 0s, color 0.25s ease-in-out 0s, opacity 0.25s ease-in-out 0s, box-shadow 0.25s ease-in-out 0s, border 0.25s ease-in-out 0s, fill 0.25s ease-in-out 0s, transform 0.15s ease-in-out 0s, height 0.25s ease-in-out 0s, line-height 0.25s ease-in-out 0s;
+}
+
+body.users_page_edit-member #profile-edit input[type="submit"]:hover {
+    background-color: #6c8b24 !important;
+}
+
+body.users_page_edit-member a.remove-repeater-row,
+body.users_page_edit-member a.update_fields {
+    background: #D25353;
+    color: #fff;
+    max-width: 180px;
+    width: 100%;
+    text-align: center;
+}
+
+body.users_page_edit-member a.update_fields {
+    background: #82a334;
+}
+
+body.users_page_edit-member a.add_new_row {
+    margin-top: 15px;
+}
+
+body.users_page_edit-member a.add_new_row:hover,
+body.users_page_edit-member a.mediator-member-avatar {
+    background: #B5B5B5;
+}
+
+body.users_page_edit-member a.remove-repeater-row:hover {
+    background: #C74242;
+}
+
+body.users_page_edit-member .member-group-child.error {
+    border: none;
+    padding-left: 0;
+    margin-left: 0;
+    box-shadow: none;
+}
+
+body.users_page_edit-member a.view-profile,
+body.users_page_edit-member .organization-popup {
+    display: none !important;
+}
+
+body.users_page_edit-member form#profile-edit label {
+    display: block;
+    widows: 100%;
+    clear: both;
+}
+
+body.users_page_edit-member form#thumbnail_upload {
+    position: absolute;
+    top: -99999px;
+    left: -99999px;
+    opacity: 0;
+}
+
+
+/*DATAPICKER BEGIN*/
+
+div.ui-datepicker {
+    width: 200px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.22);
+    text-align: center;
+    background: #fff;
+}
+
+div.ui-datepicker div.ui-datepicker-header {
+    background: #419D2A;
+    color: white;
+    margin-bottom: 0;
+    padding: 40px 10px 10px 10px;
+    position: relative;
+}
+
+div.ui-datepicker div.ui-datepicker-header div.ui-datepicker-title {}
+
+div.ui-datepicker div.ui-datepicker-header div.ui-datepicker-title select {
+    display: inline-block;
+    width: 48%;
+    clear: both;
+    font-size: 11px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    border: 0px;
+    margin: 0 1%;
+    background: url('images/icon-arrow-down.svg') no-repeat right 10px center / 10px 10px white;
+}
+
+div.ui-datepicker div.ui-datepicker-header a.ui-corner-all {
+    position: absolute;
+    top: 10px;
+    cursor: pointer;
+}
+
+div.ui-datepicker div.ui-datepicker-header a.ui-corner-all .ui-icon {
+    font-size: 0;
+    background: url('images/icon_arrow_calendar_white.svg') no-repeat 0 0 / 15px 15px;
+    display: block;
+    width: 15px;
+    height: 15px;
+}
+
+div.ui-datepicker div.ui-datepicker-header a.ui-datepicker-prev {
+    left: 10px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+div.ui-datepicker div.ui-datepicker-header a.ui-datepicker-next {
+    right: 10px;
+}
+
+div.ui-datepicker table {
+    width: 100%;
+}
+
+div.ui-datepicker table a {
+    color: black;
+}
+
+div.ui-datepicker table .ui-state-disabled span {
+    opacity: 0.3;
+}
+
+div.ui-datepicker table a.ui-state-hover,
+div.ui-datepicker table a.ui-state-highlight {
+    color: #419D2A;
+    font-weight: 700;
+}
+
+
+/*DATAPICKER END*/
+
+body.users_page_edit-member .alert_changes {
+    display: none;
+}
+
+body.users_page_edit-member .box h4 {
+    font-size: 20px;
+    line-height: normal;
+    margin-top: 0;
+}
+
+body.users_page_edit-member .asso-org {
+    overflow: hidden;
+}
+
+div.alert_changes h3 {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    margin: 0;
+    color: red;
+}
+
+div.alert_changes {
+    padding: 10px;
+    margin: 20px 0;
+    background: #fff;
+}
+
+body.users_page_edit-member .asso-org .left {
+    float: none !important;
+    width: 100% !important;
+    overflow: hidden;
+}
+
+body.users_page_edit-member .asso-org .item {
+    float: left;
+}
+
+body.users_page_edit-member .asso-org .item h4 {
+    text-align: center;
+}
+
+div.ms-ctn.form-control input[type=text] {
+    max-width: 100% !important;
+}
+
+div#edit-member-magicsuggest input[type=text] {
+    padding: 10px;
+}
+
+div.loader-home-search {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.75);
+    opacity: 1;
+    z-index: 200;
+    display: none;
+}
+
+.loading div.loader-home-search {
+    display: block;
+}
+
+div.loader-home-search .loader {
+    position: absolute;
+    margin: 0px auto;
+    width: 50px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+body.codeart-search div.loader-home-search .loader {}
+
+div.loader-home-search .loader:before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+
+div.loader-home-search .circular {
+    -webkit-animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;
+    height: 100%;
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+div.loader-home-search .path {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    stroke-linecap: round;
+}
+
+@-webkit-keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0;
+    }
+    50% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -35px;
+    }
+    100% {
+        stroke-dasharray: 89, 200;
+        stroke-dashoffset: -124px;
+    }
+}
+
+@-webkit-keyframes color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+
+@keyframes color {
+    100%,
+    0% {
+        stroke: #d62d20;
+    }
+    40% {
+        stroke: #0057e7;
+    }
+    66% {
+        stroke: #008744;
+    }
+    80%,
+    90% {
+        stroke: #ffa700;
+    }
+}
+
+div.ui-datepicker div.ui-datepicker-header div.ui-datepicker-title select {
+    display: inline-block;
+    width: 48%;
+    clear: both;
+    font-size: 11px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    border: 0px;
+    margin: 0 1%;
+    background: url('images/icon-arrow-down.svg') no-repeat right 10px center / 10px 10px white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+}
+
+div.ms-ctn div.dropdown-menu {
+    width: 100% !important;
+}
+
+div.ms-ctn div.ms-sel-item,
+div.ms-ctn div.ms-res-item {
+    background: #f0f0f0;
+    color: #353535;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    margin: 0 5px 5px;
+    border: 0px !important;
+    float: none;
+    width: 100% !important;
+    margin: 0 0 10px 0 !important;
+}
+
+div.ms-ctn div.ms-trigger {
+    display: none;
+}
+
+div.avatar {
+    position: relative;
+}
+
+a.mediator-member-avatar-remove {
+    background: url('images/icon-trash.svg') no-repeat center center / 16px white;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+}
+
+div.fullblock p.field label {
+    font-size: 14px;
+    line-height: 19px;
+    color: #343434;
+    width: 90px;
+    display: inline-block;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+div.box_can_edit {
+    position: relative;
+}
+
+div.box_can_edit:after {
+    content: 'Edit';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('images/icon-profile-edit.svg') no-repeat 43% center rgba(192, 192, 192, 0.35);
+    background-size: 20px 20px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+}
+
+div.box_can_edit.editing:after {
+    display: none;
+}
+
+div.box_can_edit:hover:after {
+    opacity: 1;
+    z-index: 20;
+}
+
+#profile-edit h1,
+#profile-edit h2,
+#profile-edit h3,
+#profile-edit h4,
+#profile-edit h5,
+#profile-edit h6 {
+    font-weight: 700;
+}
+
+div.box_can_edit h4 {
+    margin: 0;
+}

@@ -1,0 +1,783 @@
+/*EDIT PROFILE BEGIN*/
+
+body.codeart-profile-edit textarea {
+    min-height: 100px;
+}
+
+body.codeart-profile-edit div.box_can_edit label {
+    font-weight: 700;
+    display: block;
+    margin: 0 0 5px 0;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+
+/*POINTER*/
+
+body.codeart-profile-edit p.hidden_profile label {
+    cursor: pointer;
+}
+
+body.codeart-profile-edit p.hidden_profile label:after,
+body.codeart-profile-edit p.hidden_profile label:before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #BFBBBB;
+    position: absolute;
+    top: 0;
+    right: -25px;
+}
+
+body.codeart-profile-edit p.hidden_profile label:before {
+    border: 0px;
+    background: url('images/icon-check-green.svg') no-repeat center center / 10px 10px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+body.codeart-profile-edit p.hidden_profile input[type=checkbox]:checked + label:before {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+body.codeart-profile-edit input[type=checkbox] {
+    appearance: checkbox;
+    -webkit-appearance: checkbox;
+}
+
+body.codeart-profile-edit div.bottom-buttons a,
+body.codeart-profile-edit div.bottom-buttons input[type=submit] {
+    color: #414141;
+    padding: 10px 15px;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 23px;
+    font-weight: 600;
+    border-radius: 4px;
+    position: relative;
+}
+
+body.codeart-profile-edit div.bottom-buttons input[type=submit] {
+    height: auto;
+    border: 0px;
+    cursor: pointer;
+}
+
+#profile-edit-content div.fullblock.education input[type=text],
+#profile-edit-content div.fullblock.education input[type=email],
+#profile-edit-content div.fullblock.education textarea {
+    width: 100%;
+}
+
+#profile-edit-content div.fullblock.education input[type=text].error,
+#profile-edit-content div.fullblock.education input[type=email].error,
+#profile-edit-content div.fullblock.education textarea.error {
+    border-color: red;
+}
+
+#profile-edit-content select {
+    background: url('images/icon-arrow-down.svg') no-repeat right 10px center;
+    background-size: 10px 10px !important;
+}
+
+#profile-edit-content div.fullblock.education select {
+    width: 110px;
+}
+
+#profile-edit-content div.fullblock.education span.hint {
+    font-size: 12px;
+    line-height: 18px;
+    color: #787878;
+}
+
+#profile-edit-content div.fullblock.education p.field label {
+    width: 170px;
+}
+
+div.top-buttons a {
+    display: inline-block;
+    padding: 13px 20px;
+    color: #444444;
+    font-size: 16px;
+    line-height: 23px;
+    background: #e3e3e3;
+    background-size: 20px 20px !important;
+}
+
+div.top-buttons a.payment-details {
+    padding-left: 40px;
+    background: url('images/icon-cards-payment.svg') no-repeat left 10px center #e3e3e3;
+}
+
+div.top-buttons a.upgrade-premium {
+    text-transform: uppercase;
+    background: url('images/icon-star.svg') no-repeat left 10px center #f0c419;
+    color: white;
+    font-weight: 700;
+    float: right;
+    padding-left: 38px;
+    border: 0px !important;
+}
+
+div.top-buttons {
+    margin-bottom: 20px;
+}
+
+
+/*TEXT RIGHT*/
+
+body.codeart-profile-edit div.bottom-buttons {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+body.codeart-profile-edit div.bottom-buttons a.view-profile,
+div.top-buttons a.view-profile {
+    padding-left: 40px;
+    background: url('images/icon-user-edit-profile.svg') no-repeat left 12px center / 20px #e3e3e3;
+}
+
+body.codeart-profile-edit div.bottom-buttons a.save,
+body.codeart-profile-edit div.bottom-buttons input[type=submit] {
+    color: white;
+}
+
+body.codeart-profile-edit div.bottom-buttons div.submit_holder:after,
+body.codeart-profile-edit div.bottom-buttons div.submit_holder:before {
+    content: '';
+    position: absolute;
+    border-radius: 4px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+}
+
+body.codeart-profile-edit div.bottom-buttons div.submit_holder.saving:after,
+body.codeart-profile-edit div.bottom-buttons div.submit_holder.saving:before {
+    display: block;
+}
+
+body.codeart-profile-edit div.bottom-buttons div.submit_holder:before {
+    z-index: 100;
+}
+
+body.codeart-profile-edit div.bottom-buttons div.submit_holder:after {
+    background: url('images/icon-single-gear-white.svg') no-repeat center center / 25px 25px;
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    z-index: 102;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+body.codeart-profile-edit div.animation-holder {
+    display: none;
+}
+
+body.codeart-profile-edit div.success-change,
+body.codeart-profile-edit div.success-icon {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    opacity: 0;
+}
+
+body.codeart-profile-edit div.success-icon {
+    width: 150px;
+    height: 150px;
+    background: url('images/icon-change-done.svg') no-repeat center center white;
+    background-size: 75px !important;
+    margin: auto;
+    border-radius: 50%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    top: -50px;
+}
+
+body.codeart-profile-edit div.animation-holder.error div.success-icon {
+    background: url('images/icon-error-red.svg') no-repeat center center white;
+}
+
+body.codeart-profile-edit div.animation-holder.error div.success-change {
+    background: #D40000;
+}
+
+body.codeart-profile-edit div.animation-holder.error div.success-icon p {
+    margin: 0 -100px;
+    left: 30px;
+}
+
+body.codeart-profile-edit div.success-icon,
+body.codeart-profile-edit div.success-icon p,
+body.codeart-profile-edit div.success-change {
+    transition: transform 0.45s ease-in-out 0s, opacity 0.3s ease-in-out 0s;
+    -webkit-transition: transform 0.45s ease-in-out 0s, opacity 0.3s ease-in-out 0s;
+    -moz-transition: transform 0.45s ease-in-out 0s, opacity 0.3s ease-in-out 0s;
+    -o-transition: transform 0.45s ease-in-out 0s, opacity 0.3s ease-in-out 0s;
+}
+
+body.codeart-profile-edit div.success-icon p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    bottom: -40px;
+    margin: 0px -30px;
+    font-weight: 300;
+    left: 8px;
+    -webkit-transform: translate3d(0%, 10px, 0);
+    transform: translate3d(0%, 10px, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    opacity: 0;
+}
+
+body.codeart-profile-edit.done div.success-change {
+    opacity: 1;
+}
+
+body.codeart-profile-edit.done div.success-icon {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    display: block;
+}
+
+body.codeart-profile-edit.done div.success-icon p {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+}
+
+#profile-edit-content {
+    background: none;
+    padding: 0;
+}
+
+#profile-edit-content div.fullblock {
+    padding: 20px;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+}
+
+#profile-edit-content div.fullblock.half {
+    background: none;
+    padding: 0;
+}
+
+#profile-edit-content div.fullblock.half div.left,
+#profile-edit-content div.fullblock.half div.right {
+    padding: 20px;
+    width: 49%;
+}
+
+#profile-edit-content div.fullblock.half div.right {
+    float: right;
+}
+
+#profile-edit-content div.fullblock div.left,
+#profile-edit-content div.fullblock div.right {
+    float: left;
+    width: 50%;
+}
+
+#profile-edit-content div.fullblock div.right {
+    padding-left: 20px;
+}
+
+#profile-edit-content div.fullblock div.avatar {
+    background: #eeeeee;
+    overflow: hidden;
+    padding: 10px;
+    margin: 0 0 20px 0;
+    position: relative;
+}
+
+#profile-edit-content div.fullblock div.avatar h4 {
+    margin: 0 0 50px 0;
+}
+
+#profile-edit-content div.fullblock div.avatar a.mediator-member-avatar {
+    font-size: 13px;
+    line-height: 19px;
+    color: #343434;
+    background: #ffffff;
+    padding: 10px 30px;
+    display: inline-block;
+}
+
+#profile-edit-content div.fullblock div.avatar a.mediator-member-avatar-remove {
+    background: url('images/icon-trash.svg') no-repeat center center / 16px white;
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+#profile-edit-content div.fullblock div.avatar img:hover ~ .mediator-member-avatar-remove,
+#profile-edit-content div.fullblock div.avatar a.mediator-member-avatar-remove:hover {
+    opacity: 1;
+}
+
+#profile-edit-content div.fullblock div.avatar .hint {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+div.ms-ctn div.ms-sel-ctn,
+div.ms-ctn div.dropdown-menu {
+    border: 1px solid silver;
+    margin: 0 0 10px 0 !important;
+    padding: 5px !important;
+}
+
+div.ms-ctn div.dropdown-menu {
+    width: 100% !important;
+}
+
+div.ms-ctn input[type=text] {
+    border: 0px !important;
+}
+
+div.ms-ctn.ms-ctn-focus {
+    box-shadow: 0px 0px 0px;
+}
+
+div.ms-ctn div.ms-sel-item,
+div.ms-ctn div.ms-res-item {
+    background: #f0f0f0;
+    color: #353535;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 4px;
+    margin: 0 5px 5px;
+    border: 0px !important;
+    float: none;
+}
+
+div.ms-ctn .ms-res-ctn .ms-res-item em {
+    background: #419D2A;
+}
+
+div.ms-ctn div.ms-res-item-active {
+    color: white;
+}
+
+#profile-edit-content div.fullblock div.avatar img {
+    width: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+#profile-edit-content div.fullblock p.field {
+    margin-bottom: 10px;
+}
+
+#profile-edit-content div.fullblock p.field.icon input[type=text],
+#profile-edit-content div.fullblock p.field.icon input[type=email] {
+    padding-left: 40px;
+}
+
+#profile-edit-content div.fullblock div.right p.field.bio label {
+    vertical-align: top;
+}
+
+#profile-edit-content div.fullblock div.right p.field.bio textarea {
+    height: 222px;
+    overflow: auto;
+}
+
+#profile-edit-content div.fullblock p.field.location input[type=text] {
+    background: url('images/icon-location-profile.svg') no-repeat left 10px center;
+}
+
+#profile-edit-content div.fullblock p.field.title input[type=text] {
+    background: url('images/icon-win-profile.svg') no-repeat left 10px center;
+}
+
+#profile-edit-content div.fullblock p.field.phone input[type=text] {
+    background: url('images/icon-phone-profile.svg') no-repeat left 10px center;
+}
+
+#profile-edit-content div.fullblock p.field.email input[type=email] {
+    background: url('images/icon-email-profile.svg') no-repeat left 10px center;
+}
+
+#profile-edit-content div.fullblock p.field.twitter input[type=text] {
+    background: url('images/icon-twitter-profile.svg') no-repeat left 10px center;
+}
+
+#profile-edit-content div.fullblock p.field.facebook input[type=text] {
+    background: url('images/icon-fb-profile.svg') no-repeat left 10px center;
+}
+
+#profile-edit-content div.fullblock p.field.gplus input[type=text] {
+    background: url('images/icon-gplus-profile.svg') no-repeat left 10px center;
+}
+
+#profile-edit-content div.fullblock p.field label {
+    font-size: 14px;
+    line-height: 19px;
+    color: #343434;
+    width: 90px;
+    display: inline-block;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+#profile-edit-content div.fullblock p.field label.will_disable {
+    width: 81%;
+    position: relative;
+}
+
+#profile-edit-content div.fullblock div.right label.will_disable {
+    width: 79%;
+}
+
+body.codeart-profile-edit.codeart-not-premium #content div.fullblock p.field label.will_disable:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 3px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('images/icon-lock.svg') no-repeat right 10px center / 18px 18px rgba(238, 238, 238, 0.66);
+}
+
+#profile-edit-content div.fullblock p.field label.will_disable input {
+    width: 100%;
+}
+
+#profile-edit-content input[type=text],
+#profile-edit-content input[type=email],
+#profile-edit-content textarea,
+#profile-edit-content select {
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    padding: 0 10px;
+    width: 81%;
+    background-size: 20px 20px !important;
+}
+
+#profile-edit-content input[type=text]:focus,
+#profile-edit-content input[type=email]:focus,
+#profile-edit-content textarea:focus,
+#profile-edit-content select:focus,
+body.codeart-upgrade form div.stripe-input input[type=text]:focus,
+body.codeart-upgrade form div.stripe-input select:focus {
+    border-color: #419D2A;
+}
+
+#profile-edit-content div.right input[type=text],
+#profile-edit-content div.right input[type=email],
+#profile-edit-content div.right textarea,
+#profile-edit-content div.right select {
+    width: 79%;
+}
+
+#profile-edit-content div.box-heading {
+    margin: 0 0 10px 0;
+    border-bottom: 2px solid #d0d0d0;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+body.codeart-profile-edit .box_can_edit a.field-item {
+    width: 200px;
+    float: left;
+    text-align: center;
+}
+
+body.codeart-profile-edit .box_can_edit div.field {
+    clear: both;
+}
+
+body.codeart-profile-edit .box_can_edit div.field-experience_period_from,
+body.codeart-profile-edit .box_can_edit div.field-experience_period_to,
+body.codeart-profile-edit .box_can_edit div.field-education_period_to,
+body.codeart-profile-edit .box_can_edit div.field-education_period_from {
+    clear: none;
+}
+
+body.codeart-profile-edit .box_can_edit.editing div.field-experience_period_from,
+body.codeart-profile-edit .box_can_edit.editing div.field-experience_period_to,
+body.codeart-profile-edit .box_can_edit.editing div.field-education_period_to,
+body.codeart-profile-edit .box_can_edit.editing div.field-education_period_from {
+    float: none;
+    clear: both;
+}
+
+body.codeart-profile-edit .box_can_edit div.field-experience_period_to p,
+body.codeart-profile-edit .box_can_edit div.field-education_period_to p {
+    margin-left: 20px !important;
+}
+
+body.codeart-profile-edit .box_can_edit div.field-experience_period_to p:after,
+body.codeart-profile-edit .box_can_edit div.field-education_period_to p:after {
+    content: '-';
+    position: absolute;
+    top: 0;
+    left: -12px;
+    bottom: 0;
+    margin: auto;
+}
+
+body.codeart-profile-edit .box_can_edit a.update_fields.field-item {
+    margin-left: 10px;
+    width: 80px;
+    color: white;
+}
+
+#profile-edit-content div.box-heading a.add-repeater,
+body.codeart-profile-edit .box_can_edit div.form a.update_fields,
+body.codeart-profile-edit .box_can_edit a.field-item,
+body.codeart-profile-edit div.fullblock a.add_new_row,
+body.codeart-profile-edit div.fullblock a.add_button {
+    font-size: 13px;
+    line-height: 18px;
+    color: #343434;
+    background: #e3e3e3;
+    padding: 7px 15px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+body.codeart-profile-edit div.fullblock a.add_new_row,
+body.codeart-profile-edit div.fullblock a.add_button {
+    display: inline-block;
+    clear: both;
+}
+
+body.codeart-profile-edit .box_can_edit div.form a.update_fields {
+    display: block;
+    width: 100px;
+    text-align: center;
+}
+
+#profile-edit-content div.box-heading a.add-repeater:hover {
+    background: #419d2a;
+    color: white;
+}
+
+#profile-edit-content div.box div.item h4,
+#profile-edit-content div.member-group-child h4 {
+    color: #000000;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#profile-edit-content div.member-group-child span.company,
+body.codeart-profile-edit.codeart-mobile .box_can_edit a.mobile-edit-button {
+    color: #3f3f3f;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 23px;
+    display: block;
+    margin: 0px 0 5px 0;
+}
+
+body.codeart-profile-edit.codeart-mobile .box_can_edit a.mobile-edit-button {
+    margin: 0;
+    text-decoration: underline;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#profile-edit-content div.member-group-child span.period {
+    font-size: 14px;
+    line-height: 19px;
+    display: block;
+    margin: 0 0 10px 0;
+}
+
+#profile-edit-content div.box div.item p,
+#profile-edit-content div.box div.item ul li,
+#profile-edit-content div.box div.item ol li,
+#profile-edit-content div.member-group-child p {
+    color: #000000;
+    font-size: 13px;
+    line-height: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+#profile-edit-content div.box div.item.first {
+    border: 0px;
+}
+
+#profile-edit-content div.box div.item {
+    margin-bottom: 20px;
+}
+
+body.codeart-profile-edit .box_can_edit:hover * {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+}
+
+body.codeart-profile-edit.codeart-mobile .box_can_edit:hover * {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+
+body.codeart-profile-edit .box_can_edit:after {
+    content: 'Edit';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('images/icon-profile-edit.svg') no-repeat 43% center rgba(192, 192, 192, 0.35);
+    background-size: 25px 25px;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    z-index: -1;
+    cursor: pointer;
+}
+
+body.codeart-profile-edit .box_can_edit:hover:after {
+    opacity: 1;
+    z-index: 100;
+}
+
+body.codeart-profile-edit .box_can_edit div.form,
+body.codeart-profile-edit .box_can_edit.editing:after {
+    display: none;
+}
+
+body.codeart-profile-edit .box_can_edit div.form input[type=text],
+body.codeart-profile-edit .box_can_edit div.form textarea {
+    margin-bottom: 15px;
+}
+
+body.codeart-profile-edit .box_can_edit.editing:hover * {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+}
+
+body.codeart-profile-edit .box_can_edit.editing div.form {
+    opacity: 1;
+    z-index: 100;
+}
+
+body.codeart-profile-edit .box_can_edit:before {}
+
+#profile-edit-content div.box div.item p,
+#profile-edit-content div.box div.item ul,
+#profile-edit-content div.box div.item ol,
+#profile-edit-content div.member-group-child p,
+body.codeart-profile-edit .box_can_edit div.field-item {
+    margin-bottom: 10px;
+}
+
+#profile-edit-content div.box-heading h4,
+#profile-edit-content div.box-heading h4 a {
+    color: #343434;
+    font-size: 20px;
+    line-height: 25px;
+    margin: 0;
+    float: left;
+    font-weight: 600;
+}
+
+#profile-edit-content div.box-heading h4.icon {
+    background-size: 20px 20px !Important;
+    padding-left: 30px;
+}
+
+#profile-edit-content div.box-heading h4.about_icon {
+    background: url('images/icon-user-heading.svg') no-repeat left center;
+}
+
+#profile-edit-content div.box-heading h4.edu_icon {
+    background: url('images/icon-education-heading.svg') no-repeat left center;
+}
+
+#profile-edit-content div.box-heading h4.exp_icon {
+    background: url('images/icon-bag-heading.svg') no-repeat left center;
+}
+
+#profile-edit-content div.box-heading h4.spec_icon {
+    background: url('images/icon-specialism-heading.svg') no-repeat left center;
+}
+
+#profile-edit-content div.box-heading h4.service_icon {
+    background: url('images/icon-gears-heading.svg') no-repeat left center;
+}
+
+#profile-edit-content div.box-heading h4.organization_icon {
+    background: url('images/icon-organization.svg') no-repeat left center;
+}
+
+#profile-edit-content div.box-heading p {
+    color: #353535;
+    font-size: 13px;
+    line-height: 19px;
+    display: block;
+    width: 100%;
+    clear: both;
+    margin: 5px 0 0 0;
+}
+
+
+/*EDIT PROFILE END*/

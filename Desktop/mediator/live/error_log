@@ -1,0 +1,101 @@
+[17-Nov-2015 15:50:06 UTC] PHP Warning:  file_get_contents(https://api.linkedin.com/v1/people/~?format=json): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/linkedin.php on line 19
+[17-Nov-2015 15:53:51 UTC] PHP Warning:  file_get_contents(https://api.linkedin.com/v1/people/~?oauth2_access_token=AQR36zAuFAzE5_hF6kjbKuVDfmGyPTUMutiHrnpWCuppKp2ePt6_MCWVibf3zrI4gmIIA6fKlaxp0iUYZK-XJkeBTwwPeKV1xnNmhxTWCQsqeq-7feA&amp;format=json): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/linkedin.php on line 23
+[17-Nov-2015 17:35:10 UTC] PHP Warning:  file_get_contents(https://www.linkedin.com/uas/oauth2/accessToken?grant_type=authorization_code&amp;client_id=771i7nupune81p&amp;client_secret=KPRV8LxTjhUoB6J9&amp;code=AQQ8KWOhYNHC2wXsHjaNC6HutdEuSDYlnKPvl_IXS1yBszgZe2AVMh6jEoo_EvnisEYlFzTobE53CDbjZTnwDEhygQUyWTdyArYzSkFtNdJwu-OHkq8&amp;redirect_uri=http%253A%252F%252Fma.codeart.rocks%252Fwp-content%252Fthemes%252Fmediator-academy%252Flinkedin.php): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/functions.php on line 1233
+[17-Nov-2015 17:36:54 UTC] PHP Warning:  file_get_contents(https://www.linkedin.com/uas/oauth2/accessToken?grant_type=authorization_code&amp;client_id=771i7nupune81p&amp;client_secret=KPRV8LxTjhUoB6J9&amp;code=AQQDXV6h5HoQ-iMBX_0o0jDwo3clsnUF2aYTPOVryHTyXB1c3CrMeZJLO_vtiTBUpLsBc7ErfDDpRjZfv04aX34RETq1pBh0-_crMc33lnex5wt_7ig&amp;redirect_uri=http%253A%252F%252Fma.codeart.rocks%252Fwp-content%252Fthemes%252Fmediator-academy%252Flinkedin.php): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/functions.php on line 1233
+[18-Nov-2015 10:57:32 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT), expecting ',' or ';' in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/linkedin-sample.php on line 80
+[20-Nov-2015 15:17:59 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/linkedin-sample.php on line 71
+[24-Nov-2015 10:18:10 UTC] WordPress database error Unknown column 'user_id' in 'where clause' for query SELECT * FROM mwdpb_mediator_members_logs WHERE user_id = 2 made by require_once('wp-load.php'), require_once('wp-config.php'), require_once('wp-settings.php'), include('/themes/mediator-academy/functions.php'), Mediator_Member->__construct, Mediator_Member->watched_videos
+[28-Dec-2015 13:56:14 UTC] PHP Warning:  Missing argument 2 for Mediator_Member::update(), called in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/lib/mediator-member.php on line 341 and defined in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/lib/mediator-member.php on line 623
+[28-Dec-2015 14:04:38 UTC] PHP Warning:  Missing argument 2 for Mediator_Member::update(), called in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/lib/mediator-member.php on line 341 and defined in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/lib/mediator-member.php on line 623
+[28-Dec-2015 14:11:59 UTC] PHP Warning:  Missing argument 2 for Mediator_Member::update(), called in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/lib/mediator-member.php on line 341 and defined in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/lib/mediator-member.php on line 623
+[28-Dec-2015 14:13:42 UTC] PHP Warning:  Missing argument 2 for Mediator_Member::update(), called in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/lib/mediator-member.php on line 341 and defined in /home/codeartm/public_html/codeart.rocks/ma/wp-content/themes/mediator-academy/lib/mediator-member.php on line 623
+[04-Jan-2016 14:41:54 UTC] PHP Fatal error:  Call to undefined function download_and_upload_avatar_from_linkedin() in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/lib/mediator-member.php on line 397
+[05-Jan-2016 16:32:00 UTC] PHP Fatal error:  Call to undefined function wp_generate_attachment_metadata() in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/lib/mediator-member.php on line 355
+[11-Feb-2016 15:08:48 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[11-Feb-2016 20:18:08 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[12-Feb-2016 10:54:29 UTC] PHP Warning:  file_get_contents(https://www.linkedin.com/uas/oauth2/accessToken?grant_type=authorization_code&amp;client_id=771i7nupune81p&amp;client_secret=KPRV8LxTjhUoB6J9&amp;code=AQSHskbozpv9lwzUqh5JV75B-Zp5vk9tUrMZuohyeoZ385g_KwfZb00lQU7cBvCrmEaEavbVhPS1-gVgDYbi4Uu4NTlrKYR1SuAj4Z07w1rc96vwIAQ&amp;redirect_uri=http%3A%2F%2Fmediator.codeart.mk%2Fwp-content%2Fthemes%2Fmediator-academy%2Flinkedin-sample.php): failed to open stream: HTTP request failed! HTTP/1.0 400 Bad Request
+ in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-sample.php on line 135
+[12-Feb-2016 10:54:29 UTC] PHP Warning:  file_get_contents(https://api.linkedin.com/v1/people/~:(firstName,lastName,email-address,maiden-name,formatted-name,phonetic-first-name,phonetic-last-name,formatted-phonetic-name,headline,location,summary,specialties,positions,picture-url,picture-urls::(original))): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-sample.php on line 169
+[12-Feb-2016 10:54:29 UTC] PHP Warning:  file_get_contents(): Filename cannot be empty in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/lib/mediator-member.php on line 380
+[12-Feb-2016 10:54:29 UTC] WordPress database error Column 'location' cannot be null for query INSERT INTO `mwdpb_mediator_members_data` (`user_id`, `avatar`, `customer_id`, `invited_by`, `uuid`, `phone`, `location`, `title`, `services_provided`, `experience`, `education`, `specialisms`, `interests`, `cases_mediated`) VALUES (435, 900, '', 0, '72bced4e-e6e3-4cd5-9464-aca2b50baca1', '', NULL, NULL, 'a:0:{}', 'a:0:{}', 'a:0:{}', 0, 0, 0) made by Mediator_Member->register_with_linkedin, Mediator_Member->add, QM_DB->query
+[15-Feb-2016 09:11:14 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[15-Feb-2016 09:12:18 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[15-Feb-2016 12:40:20 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[15-Feb-2016 12:55:57 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[15-Feb-2016 13:05:13 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[15-Feb-2016 13:33:56 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[15-Feb-2016 13:34:04 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[15-Feb-2016 13:34:05 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[15-Feb-2016 13:35:28 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[15-Feb-2016 13:35:33 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[15-Feb-2016 13:38:18 UTC] PHP Warning:  file_get_contents(https://api.linkedin.com/v1/people/~:(firstName,lastName,email-address)): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-login.php on line 157
+[15-Feb-2016 13:38:56 UTC] PHP Warning:  file_get_contents(https://api.linkedin.com/v1/people/~:(firstName,lastName,email-address)): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-login.php on line 157
+[15-Feb-2016 13:39:07 UTC] PHP Warning:  file_get_contents(https://api.linkedin.com/v1/people/~:(firstName,lastName,email-address)): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-login.php on line 157
+[15-Feb-2016 13:43:16 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/functions.php:62) in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-login.php on line 22
+[15-Feb-2016 13:43:16 UTC] PHP Warning:  file_get_contents(https://api.linkedin.com/v1/people/~:(firstName,lastName,email-address)): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-login.php on line 161
+[15-Feb-2016 13:43:35 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-login.php:16) in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-login.php on line 22
+[15-Feb-2016 13:43:35 UTC] PHP Warning:  file_get_contents(https://api.linkedin.com/v1/people/~:(firstName,lastName,email-address)): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-login.php on line 161
+[15-Feb-2016 13:43:59 UTC] PHP Warning:  file_get_contents(https://api.linkedin.com/v1/people/~:(firstName,lastName,email-address)): failed to open stream: HTTP request failed! HTTP/1.0 401 Unauthorized
+ in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/linkedin-login.php on line 160
+[15-Feb-2016 13:44:57 UTC] PHP Warning:  trim() expects parameter 1 to be string, object given in /home/codeart/public_html/mediator/wp-includes/class-wp-user.php on line 201
+[16-Feb-2016 09:13:09 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting ')' in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/functions.php on line 1340
+[18-Feb-2016 08:29:30 America/New_York] PHP Fatal error:  Call to undefined function get_stylesheet_directory() in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/codeart-aweber.php on line 3
+[19-Feb-2016 07:13:42 America/New_York] PHP Fatal error:  Uncaught exception 'AWeberMethodNotImplemented' with message 'This method is not implemented by the current resource.' in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php:303
+Stack trace:
+#0 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php(186): AWeberEntry->_methodFor(Array)
+#1 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber-upgrade-to-premium.php(19): AWeberEntry->findSubscribers()
+#2 {main}
+  thrown in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php on line 303
+[19-Feb-2016 07:13:54 America/New_York] PHP Fatal error:  Uncaught exception 'AWeberMethodNotImplemented' with message 'This method is not implemented by the current resource.' in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php:303
+Stack trace:
+#0 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php(186): AWeberEntry->_methodFor(Array)
+#1 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber-upgrade-to-premium.php(19): AWeberEntry->findSubscribers(Array)
+#2 {main}
+  thrown in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php on line 303
+[19-Feb-2016 07:13:59 America/New_York] PHP Fatal error:  Uncaught exception 'AWeberMethodNotImplemented' with message 'This method is not implemented by the current resource.' in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php:303
+Stack trace:
+#0 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php(186): AWeberEntry->_methodFor(Array)
+#1 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber-upgrade-to-premium.php(19): AWeberEntry->findSubscribers(Array)
+#2 {main}
+  thrown in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php on line 303
+[19-Feb-2016 07:14:43 America/New_York] PHP Fatal error:  Uncaught exception 'AWeberMethodNotImplemented' with message 'This method is not implemented by the current resource.' in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php:303
+Stack trace:
+#0 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php(186): AWeberEntry->_methodFor(Array)
+#1 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber-upgrade-to-premium.php(19): AWeberEntry->findSubscribers(Array)
+#2 {main}
+  thrown in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php on line 303
+[19-Feb-2016 07:15:53 America/New_York] PHP Fatal error:  Uncaught exception 'AWeberMethodNotImplemented' with message 'This method is not implemented by the current resource.' in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php:303
+Stack trace:
+#0 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php(186): AWeberEntry->_methodFor(Array)
+#1 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber-upgrade-to-premium.php(21): AWeberEntry->findSubscribers(Array)
+#2 {main}
+  thrown in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php on line 303
+[19-Feb-2016 08:03:03 America/New_York] PHP Fatal error:  Uncaught exception 'AWeberAPIException' with message 'Invalid signature. Expected signature base string: GET&https%3A%2F%2Fapi.aweber.com%2F1.0%2Fsubscribers&oauth_consumer_key%3DAkDrW8EgsX6mB41OMr3kvmHW%26oauth_nonce%3Db5309c3a2183ea27d305845baaa258f6%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1455886982%26oauth_token%3DAg1zrzWLtCgpFbtaDE1xwuzn%26oauth_version%3D1.0 https://labs.aweber.com/docs/troubleshooting#unauthorized' in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/oauth_application.php:485
+Stack trace:
+#0 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/oauth_application.php(123): OAuthApplication->makeRequest('GET', 'https://api.awe...', Array)
+#1 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber.php(104): OAuthApplication->request('GET', 'https://api.awe...')
+#2 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber-auth.php(49): AWeberAPIBase->loadFromUrl('ht in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/oauth_application.php on line 485
+[19-Feb-2016 09:36:28 America/New_York] PHP Fatal error:  Uncaught exception 'AWeberAPIException' with message 'Invalid signature. Expected signature base string: GET&https%3A%2F%2Fapi.aweber.com%2F1.0%2Fsubscribers&oauth_consumer_key%3DAkDrW8EgsX6mB41OMr3kvmHW%26oauth_nonce%3Db518d2c0aa0c04b9958210afb9fcab8a%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1455892587%26oauth_token%3DAgZQawqoqkO2x6DWMR3RyvOv%26oauth_version%3D1.0 https://labs.aweber.com/docs/troubleshooting#unauthorized' in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/oauth_application.php:485
+Stack trace:
+#0 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/oauth_application.php(123): OAuthApplication->makeRequest('GET', 'https://api.awe...', Array)
+#1 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber.php(104): OAuthApplication->request('GET', 'https://api.awe...')
+#2 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber-auth.php(49): AWeberAPIBase->loadFromUrl('ht in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/oauth_application.php on line 485
+[19-Feb-2016 09:36:58 America/New_York] PHP Fatal error:  Uncaught exception 'AWeberAPIException' with message 'Rate limit exceeded (API requests per customer account per minute). https://labs.aweber.com/docs/troubleshooting#ratelimiterror' in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/oauth_application.php:485
+Stack trace:
+#0 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/oauth_application.php(123): OAuthApplication->makeRequest('GET', 'https://api.awe...', Array)
+#1 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php(319): OAuthApplication->request('GET', '/accounts/54491...')
+#2 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/aweber_entry.php(153): AWeberEntry->_getCollection('subscribers')
+#3 /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber-auth.php(40): AWeberEntry->__get('subscribers')
+#4 {main}
+  thrown in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber_api/oauth_application.php on line 485
+[19-Feb-2016 11:03:04 America/New_York] PHP Fatal error:  Call to undefined method AWeberCollection::move() in /home/codeart/public_html/mediator/wp-content/themes/mediator-academy/aweber-upgrade-to-premium.php on line 29
