@@ -27,12 +27,16 @@
 $class_map = [
     'core/Config.php',
     'core/Exception.php',
+    'core/Route.php',
     'core/Http.php',
     'core/Cache.php',
+    'core/Template.php',
     'core/View.php',
     'core/App.php',
     'core/Database.php',
+    'core/ORM.php',
     'core/Model.php',
+    'core/Auth.php',
     'core/Controller.php'
 ];
 
@@ -46,3 +50,18 @@ foreach ($class_map as $value)
     
     require_once $value;
 }
+
+
+function debug($val)
+{
+    echo '<pre>' . print_r($val, true) . '</pre>';
+}
+
+
+/* -------------------------------------------------- */
+$error_reporting_mode   = Config::debug ? E_ALL : 0;
+$display_errors_mode    = Config::debug ? 1 : 0;
+
+error_reporting($error_reporting_mode);
+ini_set('display_errors', $display_errors_mode);
+/* -------------------------------------------------- */

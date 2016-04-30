@@ -43,6 +43,16 @@ class Database extends Config
      * @var PDO object
      */
     private static $instance = null;
+
+    /**
+     * All executed queries
+     * 
+     * @since 1.0.0
+     * @access private
+     * 
+     * @var Array
+     */
+    private $queries = [];
     
     
     
@@ -66,7 +76,7 @@ class Database extends Config
                 $dns,
                 Config::database_username,
                 Config::database_password
-                );
+            );
             
             $this->set_error_mode();
             
@@ -145,7 +155,7 @@ class Database extends Config
         $this->PDO->setAttribute(
             PDO::ATTR_TIMEOUT,
             Config::database_timeout
-            );
+        );
     } // End of function set_timeout();
     
     
@@ -169,7 +179,7 @@ class Database extends Config
         $pdo_charset = sprintf(
             $format,
             Config::database_charset
-            );
+        );
         
         $this->PDO->exec($pdo_charset);
     } // End of function set_charset();
@@ -188,10 +198,14 @@ class Database extends Config
      */
     private function set_error_mode()
     {
+        $errorMode = Config::debug ? 
+            PDO::ERRMODE_EXCEPTION : 
+            PDO::ERRMODE_SILENT;
+        
         $this->PDO->setAttribute(
             PDO::ATTR_ERRMODE,
-            PDO::ERRMODE_EXCEPTION
-            );
+            $errorMode
+        );
     } // End of function set_error_mode();
     
     
@@ -235,7 +249,16 @@ class Database extends Config
     {
         if ( !empty($this->PDO) && is_callable(array($this->PDO, $method)) )
         {
-            return call_user_func_array(array($this->PDO, $method), $args);
+            $startTime  = microtime(true);
+            $response   = call_user_func_array(array($this->PDO, $method), $args);
+            $endTime    = microtime(true);
+
+            $this->queries[$method][] = [
+                'method'    => $args,
+                'runtime'   => $endTime - $startTime
+            ];
+
+            return $response;
         }
     } // End of function __call();
     

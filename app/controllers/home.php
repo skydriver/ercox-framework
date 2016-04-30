@@ -47,7 +47,7 @@ class HomeController extends Controller
     {
 		// $user = $this->model('User');
 		// var_dump( $user );
-        
+
 		View::load('home/index');
 	} // End of function index();
 

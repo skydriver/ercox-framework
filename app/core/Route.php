@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * The MIT License
  *
  * Copyright 2015 damjan.
@@ -24,26 +24,18 @@
  * THE SOFTWARE.
  */
 
-
-
-/*
- * ORM
- * error handling and exceptions
- * static paths in config
- * core easy functions
- * database correct connections and handling errors
- * add debug true or falce in configuration and handling the errors and exceptions
- * cache system
- * login system
- * template engline
- * localization
- * namespaces
- * add email support
- * create http request
- * auto load data in views
- * middlewares
+/**
+ * Route class for handling the requests
+ *
+ * @author Damjan
+ * @since 1.0.0
+ * @package ercox-mvc
+ * @copyright (c) 2016, Damjan Krstevski
  */
+class Route {
 
-require '../app/init.php';
+	private $routes = [];
 
-$app = new App();
+} // End class Route();
+
+?>

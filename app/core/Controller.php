@@ -60,7 +60,6 @@ abstract class Controller
      */
 	protected static function model( $model )
 	{
-		// require_once '../app/models/' . $model . '.php';
 		new Model( $model );
 		return new $model;
 	} // End of protected function model();

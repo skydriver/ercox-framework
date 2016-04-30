@@ -35,7 +35,14 @@
 abstract class Config
 {
     // Global website configuration
-    
+
+    /**
+     * Website debug mode
+     */
+    const debug = true;
+
+
+
     /**
      * Website charset
      */
@@ -54,7 +61,7 @@ abstract class Config
     /**
      * Website base URL
      */
-    const base_url = 'http://mvc.dev/';
+    const base_url = 'http://project-manager.dev/';
     // End global website configuration
     
     
@@ -75,7 +82,7 @@ abstract class Config
     /**
      * Database name
      */
-    const database_name = '';
+    const database_name = 'employees';
     
     /**
      * Database password
@@ -109,3 +116,15 @@ abstract class Config
     // End Database configuration
 
 } // End of class Config;
+
+
+
+
+
+/* -------------------------------------------------- */
+$error_reporting_mode   = Config::debug ? E_ALL : 0;
+$display_errors_mode    = Config::debug ? 1     : 0;
+
+error_reporting($error_reporting_mode);
+ini_set('display_errors', $display_errors_mode);
+/* -------------------------------------------------- */

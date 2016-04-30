@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
  * The MIT License
  *
  * Copyright 2015 damjan.
@@ -24,26 +24,40 @@
  * THE SOFTWARE.
  */
 
-
-
-/*
- * ORM
- * error handling and exceptions
- * static paths in config
- * core easy functions
- * database correct connections and handling errors
- * add debug true or falce in configuration and handling the errors and exceptions
- * cache system
- * login system
- * template engline
- * localization
- * namespaces
- * add email support
- * create http request
- * auto load data in views
- * middlewares
+/**
+ * Class Auth
+ *
+ * @author Damjan
+ * @version 1.0.0
+ * @package ercox-mvc
+ * @copyright (c) 2015, Damjan Krstevski
  */
+class Auth
+{
+    private $currentUser;
 
-require '../app/init.php';
+    public function __construct($value='')
+    {
+        # code...
+    }
 
-$app = new App();
+    public function __destruct()
+    {
+        # code...
+    }
+
+    public function login($value='')
+    {
+        # code...
+    }
+
+    public function logout($value='')
+    {
+        # code...
+    }
+
+    public function register($value='')
+    {
+        # code...
+    }
+} // End of class Auth

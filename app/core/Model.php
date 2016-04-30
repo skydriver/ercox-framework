@@ -44,9 +44,9 @@ class Model
      * 
      * @return void
      */
-	public function __construct( $model )
-	{
-		require_once '../app/models/' . $model . '.php';
+    public function __construct( $model )
+    {
+    	require_once '../app/models/' . $model . '.php';
 	}
 
 }
